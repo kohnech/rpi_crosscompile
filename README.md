@@ -4,4 +4,5 @@ Devcontainer environment for VSCode to crosscompile apps to Raspberry Pi platfor
 ## Commands
 Crosscompile:
 
+    mkdir build/ && cd build/
     cmake -DCMAKE_TOOLCHAIN_FILE=/workspaces/rpi_crosscompile/rpitoolchain.cmake ..
