@@ -11,4 +11,5 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Build
-      run: mkdir build; cd build; -DCMAKE_TOOLCHAIN_FILE=/workspaces/rpi_crosscompile/rpitoolchain.cmake ..
+      run: ls -ltrha; pwd
+    #      run: mkdir build; cd build; -DCMAKE_TOOLCHAIN_FILE=/workspaces/rpi_crosscompile/rpitoolchain.cmake ..
