@@ -1,5 +1,4 @@
 name: C/C++ CI
-description: 'Builds raspberry pi cmake project'
 
 on: [push]
 
