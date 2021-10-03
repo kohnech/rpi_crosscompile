@@ -10,6 +10,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Build
-#      run: ls $GITHUB_WORKSPACE
+    - name: CMake Configure
       run: mkdir build; cd build; cmake -DCMAKE_TOOLCHAIN_FILE=$GITHUB_WORKSPACE/rpitoolchain.cmake ..
+    - name: CMake Build
+      run: cd build; cmake --build .
