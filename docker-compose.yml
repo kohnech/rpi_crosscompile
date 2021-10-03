@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  rpi_ci:
+    image: heliconwave/rpi_ci:latest
+    build:
+      context: ./
+      dockerfile: .devcontainer/Dockerfile
+      
