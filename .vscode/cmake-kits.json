@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Linux-RaspberryPi-GCC",
+        "cmakeSettings": {
+            "BUILD_SHARED_LIBS": "OFF"
+        },
+        "compilers" : {
+            "CXX": "/opt/cross-pi-gcc/bin/arm-linux-gnueabihf-g++"
+        }
+    },
+    {
+        "name": "Linux-GCC-9",
+        "cmakeSettings": {
+            "BUILD_SHARED_LIBS": "OFF"
+        },
+        "compilers" : {
+            "CXX": "/usr/bin/g++-9"
+        }
+    }
+]
