@@ -1,0 +1,17 @@
+name: C/C++ CI
+description: 'Builds raspberry pi cmake project'
+
+on: [push]
+
+jobs:
+  build:
+    name: building
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+        uses: actions/checkout@v2
+      - name: Hello world action step
+        uses: ./ # Uses an action in the root directory
+        id: hello
+        with:
+          who-to-greet: 'Mona the Octocat'
