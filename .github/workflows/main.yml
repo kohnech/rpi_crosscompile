@@ -11,4 +11,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Build
-      run: mkdir build; cd build; -DCMAKE_TOOLCHAIN_FILE=../rpitoolchain.cmake ..
+      run: mkdir build; cd build; -DCMAKE_TOOLCHAIN_FILE=$(pwd)/../rpitoolchain.cmake ..
