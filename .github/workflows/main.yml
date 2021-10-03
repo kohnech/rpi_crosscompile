@@ -11,5 +11,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Build
-      run: echo $GITHUB_WORKSPACE
-#      run: mkdir build; cd build; -DCMAKE_TOOLCHAIN_FILE=$(pwd)/../rpitoolchain.cmake ..
+      run: mkdir build; cd build; -DCMAKE_TOOLCHAIN_FILE=$GITHUB_WORKSPACE/rpitoolchain.cmake ..
