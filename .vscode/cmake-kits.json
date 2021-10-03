@@ -4,9 +4,7 @@
         "cmakeSettings": {
             "BUILD_SHARED_LIBS": "OFF"
         },
-        "compilers" : {
-            "CXX": "/opt/cross-pi-gcc/bin/arm-linux-gnueabihf-g++"
-        }
+        "toolchainFile": "/workspaces/rpi_crosscompile/rpitoolchain.cmake"
     },
     {
         "name": "Linux-GCC-9",
