@@ -6,7 +6,7 @@ jobs:
   build:
     name: building
     runs-on: ubuntu-20.04
-    container: heliconwave/rpi_ci:latest
+    container: heliconwave/rpi_devcontainer:latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2

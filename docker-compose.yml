@@ -1,9 +1,10 @@
 version: '3.8'
 
 services:
-  rpi_ci:
-    image: heliconwave/rpi_ci:latest
+  rpi_devcontainer:
+    image: heliconwave/rpi_devcontainer:latest
     build:
       context: ./
       dockerfile: .devcontainer/Dockerfile
-      
+    stdin_open: true
+    tty: true
